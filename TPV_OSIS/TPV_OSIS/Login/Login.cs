@@ -36,9 +36,6 @@ namespace TPV_OSIS
                     "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 
-                ZerbitzariaKudeaketa.ZerbitzariaPiztuta(5555);
-
-                
                 var txat = new TxatForm(erabiltzailea);
                 txat.Show();
 
@@ -50,6 +47,7 @@ namespace TPV_OSIS
                 lblMezua.ForeColor = Color.Red;
             }
         }
+
 
     }
 }

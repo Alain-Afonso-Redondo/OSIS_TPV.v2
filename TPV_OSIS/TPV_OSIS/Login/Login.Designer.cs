@@ -84,7 +84,7 @@
             this.btnSartu.TabIndex = 4;
             this.btnSartu.Text = "Sartu";
             this.btnSartu.UseVisualStyleBackColor = false;
-            this.btnSartu.Click += new System.EventHandler(this.btnSartu_Click);
+            this.btnSartu.Click += new System.EventHandler(this.btnSartu_Klik);
             // 
             // lblMezua
             // 

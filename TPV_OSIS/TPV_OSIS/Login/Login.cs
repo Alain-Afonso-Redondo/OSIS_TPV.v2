@@ -17,12 +17,12 @@ namespace TPV_OSIS
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Login_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void btnSartu_Click(object sender, EventArgs e)
+        private void btnSartu_Klik(object sender, EventArgs e)
         {
             string erabiltzailea = txbErab.Text.Trim();
             string pasahitza = txbPasa.Text.Trim();
@@ -35,14 +35,13 @@ namespace TPV_OSIS
                 MessageBox.Show("Ondo logeatu zara! Ongi etorri " + erabiltzailea,
                     "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // 🔥 Arranca el servidor solo si aún no está iniciado
-                ServerManager.EnsureStarted(5555);
+                
+                ZerbitzariaKudeaketa.ZerbitzariaPiztuta(5555);
 
-                // 🔥 Abre el chat con el nombre del usuario logeado
-                var chat = new ChatForm(erabiltzailea);
-                chat.Show();
+                
+                var txat = new TxatForm(erabiltzailea);
+                txat.Show();
 
-                // Ocultar el login, baina mantendu aplikazioa irekita
                 this.Hide();
             }
             else
@@ -52,9 +51,5 @@ namespace TPV_OSIS
             }
         }
 
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

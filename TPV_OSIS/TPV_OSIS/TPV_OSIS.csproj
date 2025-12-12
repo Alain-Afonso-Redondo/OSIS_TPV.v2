@@ -114,10 +114,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChatForm.cs">
+    <Compile Include="TxatForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClientHandler.cs" />
+    <Compile Include="ErabiltzaileKudeaketa.cs" />
     <Compile Include="Erabiltzaileak\ErabiltzaileController.cs" />
     <Compile Include="NHibernate\NHibernateHelper.cs" />
     <Compile Include="Erabiltzaileak\ErabiltzaileakMap.cs" />
@@ -130,10 +130,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Server.cs" />
-    <Compile Include="ServerManager.cs" />
-    <EmbeddedResource Include="ChatForm.resx">
-      <DependentUpon>ChatForm.cs</DependentUpon>
+    <Compile Include="Zerbitzaria.cs" />
+    <Compile Include="ZerbitzariaKudeaketa.cs" />
+    <EmbeddedResource Include="TxatForm.resx">
+      <DependentUpon>TxatForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

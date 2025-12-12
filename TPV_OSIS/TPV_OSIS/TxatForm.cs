@@ -64,7 +64,7 @@ namespace TPV_OSIS
 
             try
             {
-                erabiltzailea = new TcpClient("localhost", 3306);
+                erabiltzailea = new TcpClient("127.0.0.1", 3306);
                 var ns = erabiltzailea.GetStream();
                 irakurlea = new StreamReader(ns);
                 idazlea = new StreamWriter(ns) { AutoFlush = true };
